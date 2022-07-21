@@ -1,4 +1,4 @@
-# PHP Client to API [Borzo Delivery](https://borzodelivery.com)
+# PHP API Client to [Borzo Delivery](https://borzodelivery.com)
 
 ### API Documentation:
 
@@ -33,7 +33,7 @@ See the example below about creating an instance with autentication:
 ```php
 use BorzoDelivery\Api\Borzo;
 
-$borzoSdk = new Borzo('SECRET_AUTH_TOKEN');
+$borzo = new Borzo('SECRET_AUTH_TOKEN');
 ```
 
 
@@ -75,7 +75,7 @@ $orderRequest = new Order([
     "points"           => $points,
 ]);
 
-$borzoSdk->priceCalculation($order);
+$borzo->priceCalculation($order);
 ```
 
 ### Executing the unit tests
@@ -93,7 +93,7 @@ use BorzoDelivery\Exceptions\ApiException;
 
 try{
 
-    $borzoSdk->priceCalculation($order);
+    $borzo->priceCalculation($order);
 
 } catch (ApiException $apiException) {
     $errors = $apiException->getErrors();

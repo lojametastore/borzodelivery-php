@@ -1,6 +1,6 @@
 {
-  "name": "lojametastore/borzodelivery-sdk-php",
-  "description": "SDK to integration with Borzo Delivery",
+  "name": "lojametastore/borzodelivery-php",
+  "description": "API Client to integration with Borzo Delivery",
   "type": "library",
   "minimum-stability": "stable",
   "license": "MIT",
