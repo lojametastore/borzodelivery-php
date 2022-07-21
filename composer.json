@@ -1,0 +1,31 @@
+{
+  "name": "lojametastore/borzodelivery-sdk-php",
+  "description": "SDK to integration with Borzo Delivery",
+  "type": "library",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kallef Alexandre",
+      "email": "kallef.alexandre@lojametastore.com.br"
+    }
+  ],
+  "require": {
+    "php": ">= 7.4",
+    "guzzlehttp/guzzle": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "BorzoDelivery\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "fakerphp/faker": "^1.19"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
+}
